@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setpassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16sp"
+    android:orientation="vertical"
+    tools:context=".SetpasswordActivity">
+
+    <TextView
+        android:id="@+id/tv_frequencyinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:hint="@string/type_your_frequency"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_frequencyinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_infofrquency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginTop="280dp">
+
+        <Button
+
+            android:background="@drawable/mystyle"
+            android:id="@+id/button_savefrequency"
+            android:layout_width="150sp"
+            android:layout_margin="15sp"
+            android:layout_height="match_parent"
+            android:text="@string/save_info" />
+
+        <Button
+            android:id="@+id/button_displayfrquency"
+            android:layout_width="150sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mystyle"
+            android:layout_margin="15sp"
+            android:layout_toEndOf="@id/button_savefrequency"
+            android:layout_toRightOf="@id/button_savefrequency"
+            android:text="@string/display_info" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
